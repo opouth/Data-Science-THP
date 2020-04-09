@@ -75,6 +75,8 @@ def uppercase_starting_quantity(journalists)
 
 	underscore_quantity(journalists)
 
+	# Smallest handles
+
 	def smallest_handle(journalists)
   sort_by_length = journalists.sort_by(&:length)
   smallest = []
@@ -86,3 +88,20 @@ def uppercase_starting_quantity(journalists)
 end
 
   smallest_handle(journalists)
+
+  # Where is @espencer
+
+  def epenser(journalists)
+  	puts "@epenser come at the freaking #{journalists.index("@epenser")}th place!!"
+  end
+
+  epenser(journalists)
+
+  # alphabetical order
+
+def alphabetical_journalists(journalists)
+	puts "The scary alphabetical order of these jornos twitters is:"
+	puts "#{journalists.sort_by { |word| word.downcase }}"
+end
+
+alphabetical_journalists(journalists)
